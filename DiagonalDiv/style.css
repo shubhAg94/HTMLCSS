@@ -1,0 +1,27 @@
+*{
+  box-sizing: border-box;
+}
+/* For Method - 1 (not good - multiple flex-container) */
+/* .flex-container{
+  display: flex;
+  width: 300px;
+  height: 50px;
+}
+.flex-item{
+  width: 100px;
+  height: 50px;
+  border: 1px solid red;
+} */
+
+/* Method - 2 (With single flex-container) */
+.flex-container{
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 50px;
+}
+.flex-item{
+  width: 100px;
+  height: 50px;
+  border: 1px solid red;
+}

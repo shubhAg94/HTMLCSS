@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Diagonal Div</title>
+</head>
+
+<body>
+  <!-- Method -1 (not good - multiple flex-container) -->
+  <!-- <div style="justify-content: flex-start;" class="flex-container">
+    <div  class="flex-item"></div>
+  </div>
+  <div style="justify-content: center;" class="flex-container">
+    <div  class="flex-item"></div>
+  </div>
+  <div style="justify-content: flex-end;" class="flex-container">
+    <div  class="flex-item"></div>
+  </div> -->
+
+  <!-- Method - 2 (With single flex-container) -->
+  <div class="flex-container">
+    <div style="align-self: flex-start;" class="flex-item"></div>
+    <div style="align-self: center;" class="flex-item"></div>
+    <div style="align-self: flex-end;" class="flex-item"></div>
+  </div>
+
+  
+</body>
+
+</html>

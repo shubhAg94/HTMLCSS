@@ -1,0 +1,95 @@
+*{
+  box-sizing: border-box;
+}
+
+.container1 {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  position: relative;
+}
+
+/* For Method - 1 */
+.child1 {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+
+  /* Center vertically and horizontally */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -25px 0 0 -25px; /* apply negative top and left margins to truly center the element */
+}
+
+/* Method - 2 --> Beautification of Method 1 */
+.child2 {
+  width: 50px;
+  height: 50px;
+  background-color: blue;
+  
+  /* Center vertically and horizontally */
+  position: absolute;
+  top: calc(50% - 25px);
+  left: calc(50% - 25px);
+}
+
+/* Method - 3 */
+.child3 {
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  /* Center vertically and horizontally */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* For Method - 4 */
+.child4 {
+  width: 50px;
+  height: 50px;
+  background-color: green;
+  /* Center vertically and horizontally */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+/* Method - 5 */
+.flex-container{
+  display: flex;
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  justify-content: center;
+  align-items: center;
+}
+.flex-item{
+  width: 50px;
+  height: 50px;
+  background-color: orange;
+}
+
+/* Method - 6 */
+.grid-container {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+
+  display: grid;
+}
+.grid-item {
+  width: 50px;
+  height: 50px;
+  background-color: magenta;
+
+  align-self: center;
+  justify-self: center;
+}
+
+
